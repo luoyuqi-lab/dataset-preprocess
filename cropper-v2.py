@@ -93,3 +93,5 @@ plt.imshow(img_c)
 print(a, b)
 print(img_array[a, b])
 plt.show()'''
+
+print('git')
