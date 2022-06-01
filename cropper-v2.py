@@ -94,4 +94,5 @@ print(a, b)
 print(img_array[a, b])
 plt.show()'''
 
-print('git')
+cropped = img1.crop((a, b1, a2, b3))
+cropped.save("C:/Users/luoyu/OneDrive/桌面/cutnew.gif")
