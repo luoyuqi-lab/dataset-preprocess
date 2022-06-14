@@ -1,6 +1,8 @@
 from PIL import Image
 import os
 import matplotlib.pyplot as plt
+
+
 # path = ("E:/sushi_white/")
 # filename = os.listdir(path)
 # img = Image.open(path + file)

@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 import matplotlib.pyplot as plt
-
+# For white bg, single characters, full cropper.
 path = ("E:/cropped/")
 filename = os.listdir(path)
 for file in filename:

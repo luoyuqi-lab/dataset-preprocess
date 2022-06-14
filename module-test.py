@@ -1,21 +1,19 @@
-import os
-import shutil
 from PIL import Image
+import os
+import matplotlib.pyplot as plt
+import matplotlib.image as mping
+import matplotlib.patches as patches
+import json
+# For yellow bg, single characters, full cropper.
 
-path = ("E:/sushi/")
-filename = os.listdir(path)
+'''img = Image.open("E:/sushi_yellow/安.gif")
+img1 = img.convert('RGB')
+img_array = img1.load()
+rgb_array = img_array[106, 242]'''
 
-'''img = Image.open("E:/sushi/並.gif")
-img_array = img.load()
-rgb_array = img_array[10, 10]
-print(rgb_array)
-r = rgb_array[0]
-g = rgb_array[1]
-b = rgb_array[2]
-if r != 255:
-    print('yes')
-print(rgb_array)
-print(r,g,b)'''
 
-for x in range(10, 0, -1):
-    print(x)
+data = open("C:/Users/luoyu/OneDrive/桌面/1-IV-D1-01.json", 'r', encoding='UTF-8')
+
+content = data.read()
+a = json.loads(content)
+print(a['shapes'][0]['points'])
